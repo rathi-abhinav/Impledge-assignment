@@ -40,6 +40,13 @@ Using dynamic memory allocation to store the trie data structure allows the prog
 "./main Input_01.txt"
 
 The program will output the longest compound word and the second longest compound word from the file `Input_01.txt`. It will also output the time taken to process the file.
+Design decisions
+Some of the design decisions that went into the code include:
+
+Using a trie data structure to store the list of words. A trie is well-suited for storing strings and allows for efficient searching and prefix matching.
+Using dynamic memory allocation to store the trie data structure. This avoids stack overflow when processing large inputs.
+Iterating over the words in the list in reverse order of their length. This allows the program to find the longest compound words first.
+Keeping track of the longest compound word and the second longest compound word. This allows the program to output both of these words to the user.
 
 **Conclusion**
 
